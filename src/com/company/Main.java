@@ -33,10 +33,12 @@ public class Main {
         }
         System.out.println(firstTaskPartThree[0]);
         for (int i = 0; i < firstTaskPartOne.length; i++) {
-            if (firstTaskPartOne[i] % 2 != 0) {
+            if (firstTaskPartOne[i] % 2 != 0 && i < 2) {
+                System.out.println(firstTaskPartOne[i] + 1 + ", ");
+            } else if (firstTaskPartOne[i] % 2 != 0 && i==2) {
                 System.out.println(firstTaskPartOne[i] + 1);
-            } else {
-                System.out.println(firstTaskPartOne[i]);
+            } else if (firstTaskPartOne[i] % 2 ==0 && i < 2) {
+                System.out.println(firstTaskPartOne[i] + ", ");
             }
         }
     }
